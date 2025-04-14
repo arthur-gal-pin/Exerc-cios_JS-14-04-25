@@ -1,16 +1,16 @@
-//Exercício 2: Peça para o usuário digitar 10 números inteiros e exiba a soma deles no final.
-alert("Insira 10 números para soma.");
-let soma = 0;
+//Exercício 3: Peça ao usuário um número e exiba a tabuada de 1 a 10 desse número.
 
-for (let i = 1; i <= 10; i++) {
-    let num = parseInt(prompt(`Insira o número ${i}:`)); // Solicita o número ao usuário
-    if (isNaN(num) || num <= 1) {
-        alert("Valor inválido.");
-    } else{
-        soma += num; // Adiciona o número à soma
+const num = parseInt(prompt("Escolha um número para exibir sua tabuada."));
+let frase = "";
+if (isNaN(num) || num <= 1) {
+    alert("Valor inválido.");
+} else {
+    for (let i = 1; i <= 10; i++) {
+        frase = (frase + `${num} × ${i} = ${num * i} \n`)
     }
+    alert(frase)
 }
 
-alert("Soma: " + soma); // Exibe a soma final
+
 
 
