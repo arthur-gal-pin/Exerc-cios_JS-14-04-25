@@ -1,11 +1,16 @@
-//Exercício 1:Crie um programa que peça um número ao usuário e exiba na tela todos os números de 1 até o número digitado.
-const num = parseInt(prompt('Insira um número:'));
-if (isNaN(num) || num <= 1) {
-    alert("Você colocou um valor inválido para número.")
-} else {
-    let frase = "";
-    for (let i = 1; i <= num; i++) {
-        frase = frase + " " + i;
+//Exercício 2: Peça para o usuário digitar 10 números inteiros e exiba a soma deles no final.
+alert("Insira 10 números para soma.");
+let soma = 0;
+
+for (let i = 1; i <= 10; i++) {
+    let num = parseInt(prompt(`Insira o número ${i}:`)); // Solicita o número ao usuário
+    if (isNaN(num) || num <= 1) {
+        alert("Valor inválido.");
+    } else{
+        soma += num; // Adiciona o número à soma
     }
-    alert(frase)
 }
+
+alert("Soma: " + soma); // Exibe a soma final
+
+
