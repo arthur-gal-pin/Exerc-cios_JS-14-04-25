@@ -2,13 +2,13 @@
 
 const num = parseInt(prompt("Escolha um número para exibir sua tabuada."));
 let frase = "";
-if (isNaN(num) || num <= 1) {
+if (isNaN(num)) {
     alert("Valor inválido.");
 } else {
     for (let i = 1; i <= 10; i++) {
         frase = (frase + `${num} × ${i} = ${num * i} \n`)
     }
-    alert(frase)
+    alert(frase);
 }
 
 
