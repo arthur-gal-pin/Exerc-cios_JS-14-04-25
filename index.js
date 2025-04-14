@@ -7,5 +7,5 @@ if (isNaN(num) || num <= 1) {
     for (let i = 1; i <= num; i++) {
         frase = frase + " " + i;
     }
-    alert(frase);
+    alert(frase)
 }
